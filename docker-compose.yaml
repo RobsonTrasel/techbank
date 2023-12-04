@@ -8,3 +8,9 @@ services:
       - "2181:2181"
     volumes:
       - "zookeeper_data:/bitnami"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    image: bitnami/kafka
+    ports:
+      -
