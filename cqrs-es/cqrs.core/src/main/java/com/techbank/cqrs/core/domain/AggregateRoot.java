@@ -22,7 +22,7 @@ public abstract class AggregateRoot {
         return this.version;
     }
 
-    public void setVersion() {
+    public void setVersion(int version) {
         this.version = version;
     }
 
