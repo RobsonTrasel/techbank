@@ -9,11 +9,13 @@ import com.techbank.cqrs.core.exceptions.ConcurrencyException;
 import com.techbank.cqrs.core.infrastructure.EventStore;
 import com.techbank.cqrs.core.producers.EventProducer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class AccountEventStore implements EventStore {
     @Autowired
     private EventProducer eventProducer;
